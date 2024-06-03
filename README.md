@@ -25,6 +25,12 @@ $ git clone https://github.com/SallesCosta/ramemGo.git
 
 3. Then run `yarn dev`, go to [localhost](http://localhost:3000) and <i>voilà!</i>
 
+## Usage
+
+
+https://github.com/SallesCosta/sallescosta.github.io/assets/81476236/d7631199-e370-4214-9160-54e84214b337
+
+
 Ramen Order SPA
 Welcome to our delightful Single Page Application (SPA) for ramen enthusiasts! This project allows users to seamlessly order their favorite ramen as a meal. Customize your bowl by choosing from a variety of broths and meats (or go meatless if you prefer).
 
