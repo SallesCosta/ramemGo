@@ -1,5 +1,6 @@
 import localForage from "localforage"
 import { fetchData } from "../services.ts"
+import { mockData } from "./mockData.ts"
 
 type BrothData = {
   id: string
@@ -50,6 +51,11 @@ export const storageData = async (): Promise<Data | null> => {
 
   if (!data) {
     data = await fetchData()
+    console.log("data :", data)
+    if (data === undefined) {
+      return mockData
+    }
+
     if (data !== undefined) {
       await setDataToStorage(data)
     } else {
@@ -59,3 +65,6 @@ export const storageData = async (): Promise<Data | null> => {
 
   return data || null
 }
+
+// NOTE: mockar o resultado da api ou armazena-lo no local storage não é uma prática recomendada para produção, mas é uma prática comum para desenvolvimento.
+// Para efeito de desenvolvimento da UI é uma opção pois também contorna o problema de CORS.
