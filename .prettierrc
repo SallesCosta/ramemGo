@@ -1,4 +1,5 @@
 {
+  "semi": false,
   "scss": {
     "tabWidth": 2
   }

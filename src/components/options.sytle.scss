@@ -1,0 +1,125 @@
+@import "../_global.scss";
+
+.wrapper {
+  align-items: center;
+  display: grid;
+  gap: 16px;
+  height: 100%;
+  position: relative;
+  max-width: 360px;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 16px;
+  margin: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: auto;
+    max-width: 1020px;
+  }
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba($gray, 0.8);
+  display: flex;
+  flex-direction: column;
+  min-width: 288px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 15px 40px 15px;
+  cursor: pointer;
+  max-width: 320px;
+
+  &__image {
+    width: 104px;
+    height: 104px;
+  }
+
+  &__name {
+    color: $blue;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    margin: 14px auto 10px auto;
+  }
+
+  &__description {
+    color: $black;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 900;
+    color: $red-ramen-go;
+    margin-top: 36px;
+  }
+
+  &.activeCard {
+    background-color: $blue;
+  }
+}
+
+.card.activeCard .card__name {
+  color: $text-white;
+}
+
+.card.activeCard .card__description {
+  color: $text-white;
+}
+
+.card.activeCard .card__price {
+  color: $yellow;
+}
+
+.navDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 24px auto 0 auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.dot {
+  border: none;
+  background-color: $inactive;
+  border-radius: 9999px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+
+.activeDot {
+  background-color: $red-ramen-go;
+  width: 36px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.title {
+  color: $black;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 31px;
+}
+
+.subtitle {
+  color: $black;
+  font-size: 14px;
+  font-weight: 400;
+}

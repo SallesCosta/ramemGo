@@ -1,0 +1,119 @@
+@import "../_global.scss";
+
+.success {
+  width: 100%;
+
+  &__stack {
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__hero {
+    align-items: center;
+    background-image: url("src/assets/svg/pattern-azul.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 8px 100px 14px;
+    justify-content: center;
+    position: relative;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 50%;
+      height: 768px;
+      padding: 0;
+    }
+  }
+
+  &__name {
+    color: $red-ramen-go;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 5px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+      top: 40px;
+      left: 40px;
+      margin-bottom: 0;
+      position: absolute;
+    }
+  }
+
+  &__image {
+    height: 374px;
+    margin-top: 71px;
+    width: 338px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 0;
+      width: 354px;
+      height: 392px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $text-white;
+    font-weight: 900;
+  }
+
+  &__order-text {
+    color: $yellow;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-top: 16px;
+    text-align: center;
+    width: 270px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 0;
+      line-height: 47px;
+      font-size: 32px;
+      width: 100%;
+    }
+  }
+
+  &__finalization-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 18px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 50%;
+    }
+  }
+
+  &__finalization-image {
+    width: 65px;
+    height: 71px;
+  }
+
+  &__chineese-text {
+    color: $yellow;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 18px 0 15px 0;
+  }
+
+  &__finalization-text {
+    color: $red-ramen-go;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__holdon-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 24px 0 0 0;
+  }
+}
