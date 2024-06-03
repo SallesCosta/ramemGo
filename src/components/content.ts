@@ -150,20 +150,20 @@ const sendOrder = async () => {
   }
 }
 
-const setButtonLoading = (isLoading: boolean) => {
-  return isLoading ? "SENDING..." : "PLACE MY ORDER"
+const setButtonLoading = (buttonElement: HTMLElement, isLoading: boolean) => {
+  buttonElement.textContent = isLoading ? "SENDING..." : "PLACE MY ORDER"
 }
 
 const handleClick = async () => {
   if (!isDisabled()) {
-    setButtonLoading(true)
+    setButtonLoading(placeOrderButton, true)
     await sendOrder()
-    setButtonLoading(false)
+    setButtonLoading(placeOrderButton, false)
   }
 }
 
 const placeOrderButton = Button({
-  text: setButtonLoading(false),
+  text: "PLACE MY ORDER",
   onClick: handleClick,
   icon: arrowIcon,
 })
