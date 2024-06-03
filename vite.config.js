@@ -1,7 +1,6 @@
 import { defineConfig } from "vite"
 
 export default defineConfig({
-  base: '/sallescosta.github.io/',
   server: {
     port: 3000,
   },
@@ -13,5 +12,6 @@ export default defineConfig({
         assetFileNames: `[name].[ext]`
       }
     }
-  }
+  },
+  base: '/',
 })
