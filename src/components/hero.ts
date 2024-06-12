@@ -38,8 +38,7 @@ const orderButton = Button<() => void>({
     const wrapperElement = document.querySelector(`[data-js="wrapper"]`)
     navigateTo(wrapperElement)
   },
-});
-
+})
 
 const balaoAmareloImg = dc("img") as HTMLImageElement
 balaoAmareloImg.src = "/assets/png/balao-amarelo.png"
@@ -87,7 +86,7 @@ const textWrapper = dc("div")
 textWrapper.classList.add("header-content__text-wrapper")
 textWrapper?.appendChild(textWrapperInternal)
 textWrapper?.appendChild(desktopDescriptionText)
-textWrapper?.appendChild(await orderButton)
+textWrapper?.appendChild(orderButton)
 
 const contentSection = dc("section")
 contentSection.classList.add("header-content__content-section")
