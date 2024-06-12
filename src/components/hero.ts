@@ -1,6 +1,5 @@
 import "./hero.style.scss"
 
-import { arrowIcon } from "./arowIcon.ts"
 import { dc, navigateTo } from "../helpers/helpers.ts"
 import { Button } from "./button.ts"
 
@@ -39,8 +38,8 @@ const orderButton = Button<() => void>({
     const wrapperElement = document.querySelector(`[data-js="wrapper"]`)
     navigateTo(wrapperElement)
   },
-  icon: arrowIcon,
-})
+});
+
 
 const balaoAmareloImg = dc("img") as HTMLImageElement
 balaoAmareloImg.src = "/assets/png/balao-amarelo.png"
@@ -88,7 +87,7 @@ const textWrapper = dc("div")
 textWrapper.classList.add("header-content__text-wrapper")
 textWrapper?.appendChild(textWrapperInternal)
 textWrapper?.appendChild(desktopDescriptionText)
-textWrapper?.appendChild(orderButton)
+textWrapper?.appendChild(await orderButton)
 
 const contentSection = dc("section")
 contentSection.classList.add("header-content__content-section")

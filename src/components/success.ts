@@ -18,7 +18,6 @@ const reset = (resetImages: any) => {
   const activeDots = document.querySelectorAll(".activeDot")
 
   activeCards.forEach((card) => card.classList.remove("activeCard"))
-  // activeCards.querySelector('img')?.setAttribute('src', brothData[i].imageInactive)
 
   activeDots.forEach((dot) => dot.classList.remove("activeDot"))
 
@@ -47,7 +46,7 @@ export const Success = (data: SuccessProps, resetImages: any) => {
   orderText.textContent = data.description
 
   const finalizationImage = dc("img") as HTMLImageElement
-  finalizationImage.src = "src/assets/png/bowing.png"
+  finalizationImage.src = "/assets/png/bowing.png"
   finalizationImage.alt = "bowing image"
   finalizationImage.classList.add("success__finalization-image")
 
@@ -68,13 +67,9 @@ export const Success = (data: SuccessProps, resetImages: any) => {
     text: "PLACE NEW ORDER",
     onClick: () => {
       const hero = document.querySelector(`[data-js="hero"]`)
-
       reset(resetImages)
-
       navigateTo(hero)
-      // wrapper?.appendChild(button);
     },
-    icon: arrowIcon,
   })
   placeNewOrderButton.setAttribute("data-js", "placeNewOrderButton")
 

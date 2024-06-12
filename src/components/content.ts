@@ -110,7 +110,6 @@ const sendOrder = async () => {
     const res = await postOrder(selectedOptions)
 
     const allImages = document.querySelectorAll(`[data-js="cardImage"]`)
-    console.log("alImages: ", allImages)
 
     const resetImages = async () => {
       const data = await storageData()
