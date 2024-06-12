@@ -4,7 +4,6 @@ import { optionSection } from "./options.ts"
 
 import { Button } from "./button.ts"
 import { postOrder } from "../services.ts"
-import { arrowIcon } from "./arowIcon.ts"
 import { Success } from "./success.ts"
 import { storageData } from "../helpers/loadData.ts"
 
