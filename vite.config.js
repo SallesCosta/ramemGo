@@ -5,13 +5,8 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    rollupOptions: {
-      output: {
-        entryFileNames: `[name].js`,
-        chunkFileNames: `[name].js`,
-        assetFileNames: `[name].[ext]`
-      }
-    }
+    outDir: "dist",
+    assetsDir: "assets",
   },
-  base: '/',
+  base: "/",
 })
