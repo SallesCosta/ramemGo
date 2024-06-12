@@ -5,13 +5,11 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    rollupOptions: {
-      input: {
-        main: "index.html",
-        assets: "src/assets/",
-      },
-      output: {
-        assetFileNames: "assets/[name]-[hash][extname]",
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: "assets/[name]-[hash][extname]",
+        },
       },
     },
   },
