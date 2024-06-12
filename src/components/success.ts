@@ -1,7 +1,6 @@
 import "./success.style.scss"
 import { dc, navigateTo } from "../helpers/helpers.ts"
 import { Button } from "./button.ts"
-import { arrowIcon } from "./arowIcon.ts"
 import { resetSelectedOptions } from "./content.ts"
 
 type SuccessProps = {
