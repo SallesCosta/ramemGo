@@ -1,4 +1,9 @@
 import "./hero.style.scss"
+import balaoAmareloImgSrc from "../assets/png/balao-amarelo.png"
+import bolaoAzulImgSrc from "../assets/png/balao-azul.png"
+import entregadoraImgSrc from "../assets/png/entregadora.png"
+
+
 
 import { dc, navigateTo } from "../helpers/helpers.ts"
 import { Button } from "./button.ts"
@@ -41,17 +46,17 @@ const orderButton = Button<() => void>({
 })
 
 const balaoAmareloImg = dc("img") as HTMLImageElement
-balaoAmareloImg.src = "/assets/png/balao-amarelo.png"
+balaoAmareloImg.src = balaoAmareloImgSrc
 balaoAmareloImg.alt = "balão amarelo image"
 balaoAmareloImg.classList.add("header-content__balao-amarelo")
 
 const balaoAzulImg = dc("img") as HTMLImageElement
-balaoAzulImg.src = "/assets/png/balao-azul.png"
+balaoAzulImg.src = bolaoAzulImgSrc
 balaoAzulImg.alt = "balão azul image"
 balaoAzulImg.classList.add("header-content__balao-azul")
 
 const entregadoraImg = dc("img") as HTMLImageElement
-entregadoraImg.src = "/assets/png/entregadora.png"
+entregadoraImg.src = entregadoraImgSrc
 entregadoraImg.alt = "entregadora image"
 entregadoraImg.classList.add("header-content__entregadora")
 
