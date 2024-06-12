@@ -3,8 +3,6 @@ import balaoAmareloImgSrc from "../assets/png/balao-amarelo.png"
 import bolaoAzulImgSrc from "../assets/png/balao-azul.png"
 import entregadoraImgSrc from "../assets/png/entregadora.png"
 
-
-
 import { dc, navigateTo } from "../helpers/helpers.ts"
 import { Button } from "./button.ts"
 

@@ -2,6 +2,7 @@ import "./success.style.scss"
 import { dc, navigateTo } from "../helpers/helpers.ts"
 import { Button } from "./button.ts"
 import { resetSelectedOptions } from "./content.ts"
+import finalizationImageSrc from  "../assets/png/bowing.png"
 
 type SuccessProps = {
   id: string
@@ -45,7 +46,7 @@ export const Success = (data: SuccessProps, resetImages: any) => {
   orderText.textContent = data.description
 
   const finalizationImage = dc("img") as HTMLImageElement
-  finalizationImage.src = "/assets/png/bowing.png"
+  finalizationImage.src = finalizationImageSrc
   finalizationImage.alt = "bowing image"
   finalizationImage.classList.add("success__finalization-image")
 

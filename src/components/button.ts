@@ -1,6 +1,6 @@
 import "../_global.scss"
 import { dc } from "../helpers/helpers.ts"
-import {arrowIcon} from "./arowIcon.ts";
+import { arrowIcon } from "./arowIcon.ts";
 
 type ButtonProps<T extends () => void> = {
   text: string
@@ -15,8 +15,8 @@ export const Button = <T extends () => void>({
   b.classList.add("button")
   b.textContent = text
   b.addEventListener("click", onClick)
-   const svgContent = arrowIcon()
-    b.insertAdjacentHTML("beforeend", svgContent)
+
+  b.insertAdjacentHTML("beforeend", arrowIcon())
 
   return b
 }

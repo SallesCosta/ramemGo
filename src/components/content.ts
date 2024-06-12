@@ -7,6 +7,8 @@ import { postOrder } from "../services.ts"
 import { Success } from "./success.ts"
 import { storageData } from "../helpers/loadData.ts"
 
+import { arrowIcon } from "./arowIcon.ts"
+
 export type incomingData = {
   id: string
   imageInactive: string
@@ -150,6 +152,7 @@ const sendOrder = async () => {
 
 const setButtonLoading = (buttonElement: HTMLElement, isLoading: boolean) => {
   buttonElement.textContent = isLoading ? "SENDING..." : "PLACE MY ORDER"
+  buttonElement.insertAdjacentHTML("beforeend", arrowIcon())
 }
 
 const handleClick = async () => {
@@ -163,6 +166,7 @@ const handleClick = async () => {
 const placeOrderButton = Button({
   text: "PLACE MY ORDER",
   onClick: handleClick,
+
 })
 
 const wrapper = dc("div")
