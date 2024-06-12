@@ -5,8 +5,15 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    outDir: "dist",
-    assetsDir: "assets",
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        assets: "src/assets/",
+      },
+      output: {
+        assetFileNames: "assets/[name]-[hash][extname]",
+      },
+    },
   },
   base: "/",
 })
