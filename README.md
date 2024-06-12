@@ -1,5 +1,7 @@
 # Ramem Go!
 
+deployed at: [ramen-go.vercel.app](https://ramem-go.netlify.app/)
+
 Welcome to our delightful Single Page Application (SPA) for ramen enthusiasts! This project allows users to seamlessly order their favorite ramen as a meal. Customize your bowl by choosing from a variety of broths and meats (or go meatless if you prefer).
 
 Features
@@ -17,7 +19,7 @@ it's not difficult. Follow the steps:
 1. Clone this repository,
 
 ```
-$ git clone https://github.com/SallesCosta/ramemGo.git
+git clone https://github.com/SallesCosta/ramemGo.git
 ```
 
 2. Once inside the directory, you must run `yarn`
@@ -27,9 +29,7 @@ $ git clone https://github.com/SallesCosta/ramemGo.git
 
 ## Usage
 
-
 https://github.com/SallesCosta/sallescosta.github.io/assets/81476236/d7631199-e370-4214-9160-54e84214b337
-
 
 ## Ramen Order SPA
 
