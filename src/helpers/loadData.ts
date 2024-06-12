@@ -51,7 +51,6 @@ export const storageData = async (): Promise<Data | null> => {
 
   if (!data) {
     data = await fetchData()
-    console.log("data :", data)
     if (data === undefined) {
       return mockData
     }
