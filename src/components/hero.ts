@@ -43,17 +43,17 @@ const orderButton = Button<() => void>({
 })
 
 const balaoAmareloImg = dc("img") as HTMLImageElement
-balaoAmareloImg.src = "src/assets/png/balao-amarelo.png"
+balaoAmareloImg.src = "/assets/png/balao-amarelo.png"
 balaoAmareloImg.alt = "balão amarelo image"
 balaoAmareloImg.classList.add("header-content__balao-amarelo")
 
 const balaoAzulImg = dc("img") as HTMLImageElement
-balaoAzulImg.src = "src/assets/png/balao-azul.png"
+balaoAzulImg.src = "/assets/png/balao-azul.png"
 balaoAzulImg.alt = "balão azul image"
 balaoAzulImg.classList.add("header-content__balao-azul")
 
 const entregadoraImg = dc("img") as HTMLImageElement
-entregadoraImg.src = "src/assets/png/entregadora.png"
+entregadoraImg.src = "/assets/png/entregadora.png"
 entregadoraImg.alt = "entregadora image"
 entregadoraImg.classList.add("header-content__entregadora")
 
