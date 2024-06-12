@@ -164,7 +164,6 @@ const handleClick = async () => {
 const placeOrderButton = Button({
   text: "PLACE MY ORDER",
   onClick: handleClick,
-  icon: arrowIcon,
 })
 
 const wrapper = dc("div")
